@@ -1,0 +1,510 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D-Dj Williey Entertainment 016</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101010;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: #080808;
+    padding: 22px 12px;
+    text-align: center;
+    border-bottom: 3px solid gold;
+}
+
+header h1 {
+    color: #228B22;
+    font-size: 27px;
+}
+
+header p {
+    color: gold;
+    margin-top: 5px;
+}
+
+nav {
+    background: #183d20;
+    padding: 12px 5px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 9px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+section {
+    padding: 35px 16px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #228B22;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+h3 {
+    color: #228B22;
+    margin-bottom: 10px;
+}
+
+.hero {
+    text-align: center;
+    background: linear-gradient(135deg, #102414, #111111);
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+.hero p {
+    margin: 12px 0;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid gold;
+    margin: 15px auto;
+    display: block;
+    background: #292929;
+}
+
+input, select, textarea, button {
+    font: inherit;
+}
+
+input[type="file"] {
+    max-width: 100%;
+    color: white;
+    margin: 8px 0;
+}
+
+button, .btn {
+    background: #228B22;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 2px;
+}
+
+button:hover, .btn:hover {
+    background: #176b17;
+}
+
+.gold-btn {
+    background: #b89520;
+    color: #111;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    gap: 14px;
+}
+
+.service {
+    background: #1d1d1d;
+    padding: 18px 10px;
+    border: 1px solid #315c35;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.service span {
+    font-size: 27px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #228B22;
+    background: #252525;
+}
+
+.form-box {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #315c35;
+}
+
+form label {
+    display: block;
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #101010;
+    color: white;
+}
+
+form button {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.note {
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.contact {
+    text-align: center;
+    background: #181818;
+}
+
+footer {
+    text-align: center;
+    background: #050505;
+    border-top: 2px solid gold;
+    padding: 22px 12px;
+    color: #ccc;
+}
+
+footer strong {
+    color: #228B22;
+}
+
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav a {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>D-DJ WILLIEY ENTERTAINMENT 016</h1>
+    <p>Your Entertainment, Our Passion!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME AND PROFILE -->
+<section class="hero" id="home">
+    <h2>Welcome to Our Website</h2>
+
+    <img id="profilePreview"
+         class="profile-pic"
+         alt="DJ profile picture"
+         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Crect width='100%25' height='100%25' fill='%23222222'/%3E%3Ctext x='50%25' y='50%25' fill='%23ffffff' font-size='18' text-anchor='middle' dominant-baseline='middle'%3EDJ PROFILE%3C/text%3E%3C/svg%3E">
+
+    <p>Upload your business profile picture below.</p>
+
+    <input type="file" id="profileInput" accept="image/*">
+
+    <p>
+        We provide professional DJ services and entertainment
+        for all occasions. Make your event memorable with us!
+    </p>
+
+    <a class="btn" href="#booking">Book Our Services</a>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+        <div class="service"><span>🎧</span>Corporate Events DJ</div>
+        <div class="service"><span>💍</span>Wedding Ceremonies</div>
+        <div class="service"><span>🤝</span>Dowry Ceremonies</div>
+        <div class="service"><span>🏡</span>Parental Visitations / Ngone Mwaitu</div>
+        <div class="service"><span>💒</span>Pre-Wedding Ceremonies</div>
+        <div class="service"><span>🎂</span>Birthday Parties</div>
+        <div class="service"><span>👶</span>Baby Showers</div>
+        <div class="service"><span>🎉</span>House Parties</div>
+        <div class="service"><span>🎓</span>Graduation Ceremonies</div>
+        <div class="service"><span>📢</span>Business Activations</div>
+        <div class="service"><span>🏷️</span>Brand Promotions</div>
+        <div class="service"><span>🚚</span>Roadshows</div>
+        <div class="service"><span>🏫</span>School Cultural Days</div>
+        <div class="service"><span>🎶</span>Freshers Night Events</div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Our Event Gallery</h2>
+
+    <p style="text-align:center">
+        Select pictures from your phone to display your events.
+    </p>
+
+    <div style="text-align:center; margin-top:15px">
+        <label for="galleryInput">Choose gallery pictures:</label>
+        <input type="file" id="galleryInput"
+               accept="image/*" multiple>
+        <br>
+        <button type="button" id="clearGallery" class="gold-btn">
+            Clear Gallery
+        </button>
+    </div>
+
+    <div class="gallery" id="galleryDisplay"></div>
+
+    <p class="note">
+        Selected pictures appear on this page. They are not
+        automatically uploaded to the public website.
+    </p>
+</section>
+
+<!-- BOOKING FORM -->
+<section id="booking">
+    <h2>Book Our Services</h2>
+
+    <div class="form-box">
+        <form id="bookingForm">
+
+            <label for="customerName">Your Full Name *</label>
+            <input type="text" id="customerName"
+                   placeholder="Enter your name" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone"
+                   placeholder="Enter your phone number" required>
+
+            <label for="eventType">Type of Event *</label>
+            <select id="eventType" required>
+                <option value="">Select an event</option>
+                <option>Corporate Event</option>
+                <option>Wedding Ceremony</option>
+                <option>Dowry Ceremony</option>
+                <option>Parental Visitation / Ngone Mwaitu</option>
+                <option>Pre-Wedding Ceremony</option>
+                <option>Birthday Party</option>
+                <option>Baby Shower</option>
+                <option>House Party</option>
+                <option>Graduation Ceremony</option>
+                <option>Business Activation</option>
+                <option>Brand Promotion</option>
+                <option>Roadshow</option>
+                <option>School Cultural Day</option>
+                <option>Freshers Night</option>
+                <option>Other</option>
+            </select>
+
+            <label for="eventDate">Event Date *</label>
+            <input type="date" id="eventDate" required>
+
+            <label for="location">Event Location *</label>
+            <input type="text" id="location"
+                   placeholder="Town or venue" required>
+
+            <label for="guests">Expected Number of Guests</label>
+            <input type="number" id="guests"
+                   min="1" placeholder="Enter number of guests">
+
+            <label for="message">Additional Details</label>
+            <textarea id="message" rows="4"
+                      placeholder="Tell us more about your event"></textarea>
+
+            <button type="submit">
+                Send Booking via WhatsApp
+            </button>
+        </form>
+
+        <p class="note">
+            Submitting opens WhatsApp with your booking details.
+            Review the message and press Send to submit your request.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <p><strong>D-Dj Williey Entertainment 016</strong></p>
+    <p>Location: Machakos, Kenya</p>
+    <p>Call / WhatsApp: 0713692682</p>
+
+    <a class="btn"
+       href="https://wa.me/254713692682"
+       target="_blank" rel="noopener">
+        Chat With Us on WhatsApp
+    </a>
+
+    <p style="margin-top:15px">
+        Keep booking D-Dj Williey Entertainment 016!
+    </p>
+</section>
+
+<footer>
+    <p><strong>D-Dj Williey Entertainment 016</strong></p>
+    <p>Thank you for supporting our business.</p>
+    <p>© <span id="year"></span> All Rights Reserved.</p>
+</footer>
+
+<script>
+// Set the current year
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+// Preview profile picture
+document.getElementById("profileInput").addEventListener(
+    "change", function () {
+        const file = this.files[0];
+
+        if (file && file.type.startsWith("image/")) {
+            const reader = new FileReader();
+
+            reader.onload = function (event) {
+                document.getElementById("profilePreview").src =
+                    event.target.result;
+            };
+
+            reader.readAsDataURL(file);
+        }
+    }
+);
+
+// Add selected pictures to the gallery
+const galleryInput = document.getElementById("galleryInput");
+const galleryDisplay = document.getElementById("galleryDisplay");
+const imageURLs = [];
+
+galleryInput.addEventListener("change", function () {
+    const files = Array.from(this.files);
+
+    files.forEach(function (file) {
+        if (!file.type.startsWith("image/")) return;
+
+        const imageURL = URL.createObjectURL(file);
+        imageURLs.push(imageURL);
+
+        const image = document.createElement("img");
+        image.src = imageURL;
+        image.alt = "Event gallery picture";
+
+        galleryDisplay.appendChild(image);
+    });
+
+    // Allow the same picture to be selected again
+    this.value = "";
+});
+
+// Clear gallery pictures
+document.getElementById("clearGallery").addEventListener(
+    "click", function () {
+        imageURLs.forEach(function (url) {
+            URL.revokeObjectURL(url);
+        });
+
+        imageURLs.length = 0;
+        galleryDisplay.replaceChildren();
+    }
+);
+
+// Send booking details to WhatsApp
+document.getElementById("bookingForm").addEventListener(
+    "submit", function (event) {
+        event.preventDefault();
+
+        const name =
+            document.getElementById("customerName").value.trim();
+        const phone =
+            document.getElementById("phone").value.trim();
+        const eventType =
+            document.getElementById("eventType").value;
+        const date =
+            document.getElementById("eventDate").value;
+        const location =
+            document.getElementById("location").value.trim();
+        const guests =
+            document.getElementById("guests").value || "Not specified";
+        const message =
+            document.getElementById("message").value.trim()
+            || "No additional details";
+
+        const bookingMessage =
+`BOOKING REQUEST - D-DJ WILLIEY ENTERTAINMENT 016
+
+Customer Name: ${name}
+Phone Number: ${phone}
+Event Type: ${eventType}
+Event Date: ${date}
+Event Location: ${location}
+Expected Guests: ${guests}
+Additional Details: ${message}`;
+
+        const whatsappURL =
+            "https://wa.me/254713692682?text=" +
+            encodeURIComponent(bookingMessage);
+
+        window.open(whatsappURL, "_blank");
+    }
+);
+</script>
+
+</body>
+</html>
